@@ -1,0 +1,10 @@
+version: '1.0'
+name: server
+
+services:
+  pythotch:
+    restart: unless-stopped
+    image: lab2_2:0.0.1
+    volumes:
+      - C:\Users\User\AI2\:/usr/app/src
+    command: python3 /usr/app/src/convolution.py
